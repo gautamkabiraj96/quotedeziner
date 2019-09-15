@@ -1,0 +1,30 @@
+<% include ./partials/header %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+                <% include ./partials/sidebar %>
+                <% include ./partials/quoteday %>
+        <div class="col-md-9">
+            <% allQuotes.reverse() %>
+            <% allQuotes.forEach(function(quote){ %>
+                  <div class="card">
+                    <div class="card-header">
+                        <%= quote.category %> Quote
+                    </div>
+                    <div class="card-body">
+                      <blockquote class="blockquote mb-0">
+                            <i><p style="font-family: Georgia, 'Times New Roman', Times, serif; font-size: 24pt">&#8220;<%= quote.quote %>&#8221;</p></i>
+                        <footer class="blockquote-footer"><%= quote.author %></footer>
+                      </blockquote>
+                        <a class="btn btn-primary float-right" href="/quotes/<%=quote._id%>"><i class="fa fa-paint-brush" style="font-size:14px"></i>
+                         Dezine It!</a><br>  
+                    </div>
+                  </div>
+                  <br>
+            <% }) %>
+        </div>
+    </div>
+</div>
+
+<% include ./partials/footer %>

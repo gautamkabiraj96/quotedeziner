@@ -1,0 +1,3 @@
+function redezine() {
+    location.reload();
+}

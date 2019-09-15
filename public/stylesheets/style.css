@@ -1,0 +1,33 @@
+.container {
+    margin-top: 80px;
+}
+
+.bg-dark {
+    background-color: #55177e !important;
+}
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color:#55177e;
+    border-color:#55177e;
+}
+
+.btn-primary {
+    border-color:#55177e;
+    background-color:#55177e;
+}
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    background-color: #fff;
+    margin: 1em 0;
+    padding: 0; 
+}
